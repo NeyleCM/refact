@@ -1,4 +1,4 @@
-import calculator from './calculator'
+import Calculator from './calculator'
 import renderEmployee from './employees'
 import Footer from './footer'
 import cocretaLogo from './assets/cocretainc.jpg';
@@ -8,14 +8,16 @@ function App() {
 
   return (
     <>
-    <img src={cocretaLogo} alt="cocreta logo"/>
-    <h1>Cocreta</h1>
+    <main>
+      <img src={cocretaLogo} alt="cocreta logo"/>
+      <h1>Cocreta</h1>
+    </main>
     <div className="envoltura">
-    {renderEmployee()}
+      {renderEmployee()}
     <h2>Calculator</h2>
-    {calculator()}
+      {Calculator()}
     </div>
-    {Footer()}
+      {Footer()}
     </>
   )
 }

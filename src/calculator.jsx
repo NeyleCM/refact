@@ -1,7 +1,6 @@
 import { useState } from "react";
-import React from 'react';
 
-      const calculator = () => {
+      const Calculator = () => {
         const [numeroUno, setNumeroUno] = useState(0);
         const [numeroDos, setNumeroDos] = useState(0);
         const [total, setTotal] = useState(0);
@@ -22,25 +21,29 @@ import React from 'react';
         };
         return (
             <>
-                <input
+                <p>
+                    <input
                     type="number"
                     value={numeroUno}
                     onChange={(e) => setNumeroUno(e.target.value)}
                     placeholder="Número uno"
-                />
-                <input
+                    />
+                </p>
+                <p>
+                    <input
                     type="number"
                     value={numeroDos}
                     onChange={(e) => setNumeroDos(e.target.value)}
                     placeholder="Número dos"
-                />
+                    />
+                </p>
                 <button onClick={sumar}>Sumar</button>
                 <button onClick={restar}>Restar</button>
                 <button onClick={multiplicar}>Multiplicar</button>
                 <button onClick={dividir}>Dividir</button>
-                <p>El total es: {total}</p>
+                <p className="total">El total es: {total}</p>
             </>
         );
     }
 
-    export default calculator;
+    export default Calculator;

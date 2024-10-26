@@ -1,6 +1,4 @@
-import React from 'react';
-
-var dataEmployees = [
+const dataEmployees = [
     { name: 'Juan', lastName: 'Perez', hobbies: ['fútbol', 'lectura'], age: 25 },
     { name: 'María', lastName: 'González', hobbies: ['pintura', 'música'], age: 30 },
     { name: 'Pedro', lastName: 'López', hobbies: ['senderismo', 'cine'], age: 28 },
