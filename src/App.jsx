@@ -1,17 +1,15 @@
 import Calculator from './calculator'
 import renderEmployee from './employees'
 import Footer from './footer'
-import cocretaLogo from './assets/cocretainc.jpg';
+import Header from './top'
+
 import './App.css'
 
 function App() {  
 
   return (
     <>
-    <main>
-      <img src={cocretaLogo} alt="cocreta logo"/>
-      <h1>Cocreta</h1>
-    </main>
+      {Header()}
     <div className="envoltura">
       {renderEmployee()}
     <h2>Calculator</h2>
