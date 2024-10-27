@@ -5,7 +5,8 @@ const Header = () => (
 <header>
     <img src={cocretaLogo} alt="cocreta logo"/>
     <h1>Cocreta</h1>
-  </header>)
+</header>
+)
     
     
     export default Header;
